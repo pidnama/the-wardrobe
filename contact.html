@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section id="landing">
+      <nav>
+        <div class="nav__container">
+          <div class="nav__logo--wrapper">
+            <h1 class="nav__logo--text">The Wardrobe</h1>
+            <img src="./assets/closet-svgrepo-com.svg" class="logo" alt="" />
+          </div>
+          <ul class="nav__links">
+            <li><a href="./index.html" class="nav__link">Home</a></li>
+            <li><a href="./contact.html" class="nav__link">Contact</a></li>
+            <li><a href="#" class="nav__link nav__link--primary no-cursor">Sales</a></li>
+          </ul>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+              </li>
+              <li class="menu__list">
+                <a href="#features" class="menu__link" onclick="closeMenu()"
+                  >Looks</a
+                >
+              </li>
+              <li class="menu__list">
+                <a
+                  class="menu__link no-cursor"
+                  href="./contact.html"
+                  onclick="closeMenu()"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section id="contact">
+      <div class="contact__wrapper">
+        <form class="form__contact" action="">
+          <h2 class="form__title">Contact us about your order</h2>
+          <label class="form__item--contact-label" for="input">Username</label>
+          <input class="input__details" type="text" required />
+          <label class="form__item--contact-label" for="input" required>Email</label>
+          <input class="input__details" type="email" required />
+          <label class="form__item--contact-label" for="input"
+            >Phone Number</label
+          >
+          <input class="input__details" type="number" />
+          <div class="btn__wrapper--submit">
+            <a
+              href="#message__successful"
+              type="button"
+              class="form__btn--submit"
+              >Submit</a
+            >
+          </div>
+        </form>
+      </div>
+      <div class="message__successful--wrapper">
+        <form id="message__successful">
+          <h2 class="message__successful--message">Message Sent</h2>
+          <a class="form__anchor--homepage" href="./index.html">Homepage</a>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row row__column">
+          <a href="#">
+            <figure class="footer__logo">
+              <img
+                src="./assets/closet-svgrepo-com.svg"
+                class="footer__logo--image"
+                alt=""
+              />
+            </figure>
+          </a>
+          <div class="footer__list">
+            <a class="footer__link" href="">Home</a>
+            <a class="footer__link no-cursor" href="">About</a>
+            <a class="footer__link" href="">Sale</a>
+            <a class="footer__link no-cursor" href="./contact.html">Contact</a>
+          </div>
+          <div class="footer__copyright">Copyright © 2023 The Wardrobe</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

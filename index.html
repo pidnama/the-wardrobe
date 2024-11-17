@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Wardrobe</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <section id="landing">
+      <nav>
+        <div class="nav__container">
+          <div class="nav__logo--wrapper">
+            <h1 class="nav__logo--text">The Wardrobe</h1>
+            <img src="./assets/closet-svgrepo-com.svg" class="logo" alt="" />
+          </div>
+          <ul class="nav__links">
+            <li><a href="#landing" class="nav__link">Home</a></li>
+            <li><a href="./contact.html" class="nav__link">Contact</a></li>
+            <li><a href="#" class="nav__link nav__link--primary no-cursor">Sales</a></li>
+          </ul>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+              </li>
+              <li class="menu__list">
+                <a href="#features" class="menu__link" onclick="closeMenu()"
+                  >Looks</a
+                >
+              </li>
+              <li class="menu__list">
+                <a
+                  class="menu__link no-cursor"
+                  href="./contact.html"
+                  onclick="closeMenu()"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="header__container">
+          <div class="header__description">
+            <h1 class="heading">
+              Australia's most awarded online fasion platform
+            </h1>
+            <h2>Find your dream look with The Wardrobe</h2>
+            <a href="#features"><button class="btn">Browse Looks</button></a>
+          </div>
+          <figure class="header__img--wrapper">
+            <img
+              class="header__img"
+              src="./assets/undraw_jewelry_iima.svg"
+              alt=""
+            />
+          </figure>
+        </div>
+      </header>
+    </section>
+    <main>
+      <section id="highlights">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">Why choose The Wardrobe ?</h2>
+            <div class="highlight__wrapper">
+              <div class="highlight">
+                <div class="highlight__img">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="highlight__subtitle">Easy and Quick</h3>
+                <p class="highlight__para">
+                  Get access to the looks you want with fast delivery.
+                </p>
+              </div>
+              <div class="highlight">
+                <div class="highlight__img">
+                  <i class="fa-solid fa-shirt"></i>
+                </div>
+                <h3 class="highlight__subtitle">10,000+ Pieces</h3>
+                <p class="highlight__para">
+                  The Wardrobe has pieces in all your favourite categories.
+                </p>
+              </div>
+              <div class="highlight">
+                <div class="highlight__img">
+                  <i class="fas fa-tags"></i>
+                </div>
+                <h3 class="highlight__subtitle">Affordable</h3>
+                <p class="highlight__para">
+                  Get your hands on popular looks for as little as $10.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="features">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">Featured Items</h2>
+            <div class="looks">
+              <div class="look">
+                <figure class="look__img--wrapper">
+                  <img class="look__img" src="./assets/look1.avif" alt="" />
+                </figure>
+                <div class="look__title">Look 1</div>
+                <div class="look__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="look__price">
+                  <span class="look__price--normal">$59.95</span> $14.95
+                </div>
+              </div>
+              <div class="look">
+                <figure class="look__img--wrapper">
+                  <img class="look__img" src="./assets/look2.avif" alt="" />
+                </figure>
+                <div class="look__title">Look 2</div>
+                <div class="look__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="look__price">
+                  <span class="look__price--normal">$59.95</span> $14.95
+                </div>
+              </div>
+              <div class="look">
+                <figure class="look__img--wrapper">
+                  <img class="look__img" src="./assets/look3.avif" alt="" />
+                </figure>
+                <div class="look__title">Look 3</div>
+                <div class="look__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="look__price">
+                  <span class="look__price--normal">$59.95</span> $14.95
+                </div>
+              </div>
+              <div class="look">
+                <figure class="look__img--wrapper">
+                  <img class="look__img" src="./assets/look4.avif" alt="" />
+                </figure>
+                <div class="look__title">Look 4</div>
+                <div class="look__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="look__price">
+                  <span class="look__price--normal">$59.95</span> $14.95
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="recent">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">Latest</h2>
+            <div class="looks">
+              <div class="look">
+                <figure class="look__img--wrapper">
+                  <img class="look__img" src="./assets/look5.avif" alt="" />
+                </figure>
+                <div class="look__title">Look 5</div>
+                <div class="look__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="look__price">
+                  <span class="look__price--normal">$59.95</span> $14.95
+                </div>
+              </div>
+              <div class="look">
+                <figure class="look__img--wrapper">
+                  <img class="look__img" src="./assets/look6.avif" alt="" />
+                </figure>
+                <div class="look__title">Look 6</div>
+                <div class="look__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="look__price">
+                  <span class="look__price--normal">$59.95</span> $14.95
+                </div>
+              </div>
+              <div class="look">
+                <figure class="look__img--wrapper">
+                  <img class="look__img" src="./assets/look7.webp" alt="" />
+                </figure>
+                <div class="look__title">Look 7</div>
+                <div class="look__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="look__price">
+                  <span class="look__price--normal">$59.95</span> $14.95
+                </div>
+              </div>
+              <div class="look">
+                <figure class="look__img--wrapper">
+                  <img class="look__img" src="./assets/look8.avif" alt="" />
+                </figure>
+                <div class="look__title">Look 8</div>
+                <div class="look__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="look__price">
+                  <span class="look__price--normal">$59.95</span> $14.95
+                </div>
+              </div>
+              <div class="look">
+                <figure class="look__img--wrapper">
+                  <img class="look__img" src="./assets/look9.webp" alt="" />
+                </figure>
+                <div class="look__title">Look 9</div>
+                <div class="look__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="look__price">
+                  <span class="look__price--normal">$59.95</span> $14.95
+                </div>
+              </div>
+              <div class="look">
+                <figure class="look__img--wrapper">
+                  <img class="look__img" src="./assets/look10.webp" alt="" />
+                </figure>
+                <div class="look__title">Look 10</div>
+                <div class="look__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="look__price">
+                  <span class="look__price--normal">$59.95</span> $14.95
+                </div>
+              </div>
+              <div class="look">
+                <figure class="look__img--wrapper">
+                  <img class="look__img" src="./assets/look11.webp" alt="" />
+                </figure>
+                <div class="look__title">Look 11</div>
+                <div class="look__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="look__price">
+                  <span class="look__price--normal">$59.95</span> $14.95
+                </div>
+              </div>
+              <div class="look">
+                <figure class="look__img--wrapper">
+                  <img class="look__img" src="./assets/look12.jpeg" alt="" />
+                </figure>
+                <div class="look__title">Look 12</div>
+                <div class="look__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="look__price">
+                  <span class="look__price--normal">$59.95</span> $14.95
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="explore">
+        <div class="container">
+          <div class="row row__column">
+            <h2 class="section__title">Explore More</h2>
+            <a href="#features">
+              <button class="btn">Browse Looks</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row row__column">
+          <a href="#">
+            <figure class="footer__logo">
+              <img
+                src="./assets/closet-svgrepo-com.svg"
+                class="footer__logo--image"
+                alt=""
+              />
+            </figure>
+          </a>
+          <div class="footer__list">
+            <a class="footer__link" href="">Home</a>
+            <a class="footer__link no-cursor" href="">About</a>
+            <a class="footer__link" href="">Sale</a>
+            <a class="footer__link no-cursor" href="./contact.html">Contact</a>
+          </div>
+          <div class="footer__copyright">Copyright © 2023 The Wardrobe</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
